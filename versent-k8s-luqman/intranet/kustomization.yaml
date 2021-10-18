@@ -1,0 +1,12 @@
+secretGenerator:
+- name: env-pass
+  literals:
+  - wp_password=root
+  - mysql_password=root
+configMapGenerator:
+- name: env-store
+  literals:
+  - wp_db_host=wordpress-mysql
+resources:
+- mysql-deployment.yaml
+- wordpress-deployment.yaml
