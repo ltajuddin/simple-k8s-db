@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+data:
+  mysql_password: cm9vdA==
+  wp_password: cm9vdA==
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: env-pass
+
+---
+apiVersion: v1
+data:
+  wp_db_host: wordpress-mysql
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: env-store
